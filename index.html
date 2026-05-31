@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="独立开发者 - AI 工具创造者">
+  <title>独立开发者 · AI 工具创造者</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== 导航栏 ========== -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Panda</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="software.html">软件</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="portfolio.html">设计作品</a></li>
+        <li><a href="changelog.html">更新日志</a></li>
+        <li><a href="contact.html">联系</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="切换主题"><span id="theme-icon">☀️</span></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero screen" id="hero">
+    <!-- 漂浮粒子 -->
+    <div class="floating-particles" id="hero-particles"></div>
+    <!-- 装饰圆环 -->
+    <div class="hero-deco hero-deco-1"></div>
+    <div class="hero-deco hero-deco-2"></div>
+    <div class="container">
+      <p class="section-label">室内设计师 · AI 探索者</p>
+      <h1>用 <span class="accent">AI</span> 创造<br>有用的工具</h1>
+      <p class="subtitle">本职室内工装设计师，业余时间用 AI 写代码。<br>不会编程，但会用好 AI。</p>
+      <div class="hero-actions">
+        <a href="software.html" class="btn btn-primary">查看我的软件</a>
+        <a href="about.html" class="btn btn-secondary">了解更多</a>
+      </div>
+
+      <!-- 向下滚动提示 -->
+      <div class="scroll-hint">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 软件板块（全宽背景带） ========== -->
+  <section class="screen section-dark" id="section-software">
+    <div class="floating-particles" id="software-particles"></div>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <div>
+          <p class="section-label">精选软件</p>
+          <h2>我开发的工具</h2>
+        </div>
+      </div>
+
+      <div class="software-grid">
+
+        <!-- 提示词管家 -->
+        <article class="software-card">
+          <div class="software-card-top">
+            <span class="version">v2.2.0</span>
+          </div>
+          <h3>提示词管家</h3>
+          <p>收集、管理、分享你的提示词。支持图片收藏、一键复制、生成分享图、导入导出配置，以及本地文件管理。</p>
+          <div class="tags">
+            <span class="tag">Electron</span>
+            <span class="tag">AI工具</span>
+            <span class="tag">Windows</span>
+            <span class="tag">提示词管理</span>
+          </div>
+          <a href="software-detail.html" class="btn btn-primary">了解详情 →</a>
+        </article>
+
+        <!-- 未来软件 -->
+        <article class="software-card software-card-ghost">
+          <div class="software-card-top">
+            <span class="version version-muted">开发中</span>
+          </div>
+          <h3>下一个项目</h3>
+          <p>新的想法正在酝酿，敬请期待。</p>
+          <div class="tags">
+            <span class="tag tag-muted">[待定]</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="section-more">
+        <a href="software.html">查看全部软件 →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== 关于我 板块 ========== -->
+  <section class="screen" id="section-about">
+    <div class="morph-blob" style="width:400px;height:400px;top:20%;left:-10%;"></div>
+    <div class="morph-blob" style="width:300px;height:300px;bottom:10%;right:-5%;animation-delay:-6s;background:rgba(99,102,241,0.03);"></div>
+    <div class="floating-particles" id="about-particles"></div>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <div>
+          <p class="section-label">关于我</p>
+          <h2>一个 AI 时代的创造者</h2>
+        </div>
+      </div>
+
+      <div class="about-preview">
+        <div class="about-preview-visual">
+          <div class="avatar-placeholder" style="background:#fff;">
+            <div class="pixel-panda">
+              <!-- R0: 耳朵 -->
+              <span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span>
+              <!-- R1: 头顶 -->
+              <span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span>
+              <!-- R2: 额头 -->
+              <span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span>
+              <!-- R3: 眼圈上部 -->
+              <span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span>
+              <!-- R4: 眼圈中部 -->
+              <span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span>
+              <!-- R5: 鼻梁 -->
+              <span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span>
+              <!-- R6: 鼻子 -->
+              <span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-n"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-n"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span>
+              <!-- R7: 嘴巴区域 -->
+              <span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span>
+              <!-- R8: 下巴 -->
+              <span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span>
+              <!-- R9: 下边缘 -->
+              <span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span>
+            </div>
+          </div>
+          <div class="about-accent-dot"></div>
+        </div>
+        <div class="about-preview-text">
+          <p class="about-lead">
+            本职是一名室内工装设计师，工作两年，每天跟空间、材料和施工图打交道。
+          </p>
+          <p>
+            业余时间研究 AI，发现原来不会写代码的人也能做出软件。于是用 AI 辅助，
+            做出了自己的第一个工具。设计教会我关注细节和用户体验，这和做软件是相通的。
+          </p>
+          <a href="about.html" class="btn btn-secondary">了解更多关于我 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 联系板块 ========== -->
+  <section class="screen" id="section-contact">
+    <div class="ripple-ring" style="animation-delay:0s;"></div>
+    <div class="ripple-ring" style="animation-delay:1.3s;width:160px;height:160px;"></div>
+    <div class="ripple-ring" style="animation-delay:2.6s;width:240px;height:240px;"></div>
+    <div class="floating-particles" id="contact-particles"></div>
+    <div class="container">
+      <div class="section-head">
+        <span class="section-num">03</span>
+        <div>
+          <p class="section-label">保持联系</p>
+          <h2>聊聊你的想法</h2>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <p>有建议、反馈或合作想法？<br>欢迎随时联系我。</p>
+        <a href="contact.html" class="btn btn-primary">联系我</a>
+        <div class="contact-links">
+          <a href="mailto:2505373866@qq.com">邮箱</a>
+          <span class="contact-sep">·</span>
+          <a href="https://github.com/Pandoudou0914-jpg" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 侧边目录导航 ========== -->
+  <nav class="side-toc" id="side-toc" aria-label="页面目录">
+    <div class="side-toc-dot active" data-label="首页" data-target="hero"></div>
+    <div class="side-toc-dot" data-label="软件" data-target="section-software"></div>
+    <div class="side-toc-dot" data-label="关于" data-target="section-about"></div>
+    <div class="side-toc-dot" data-label="联系" data-target="section-contact"></div>
+  </nav>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="software.html">软件</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html">设计作品</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <p>&copy; 2026 Panda. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

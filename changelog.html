@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="更新日志">
+  <title>更新日志 · 独立开发者</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Panda</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="software.html">软件</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="portfolio.html">设计作品</a></li>
+        <li><a href="changelog.html">更新日志</a></li>
+        <li><a href="contact.html">联系</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="切换主题"><span id="theme-icon">☀️</span></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <p class="section-label">更新日志</p>
+      <h1 style="margin-bottom: var(--space-2);">版本历史</h1>
+      <p style="margin-bottom: var(--space-6);">记录每个版本的更新内容，保持透明。</p>
+
+      <!-- 提示词管家 -->
+      <section class="section">
+        <h2 style="margin-bottom: var(--space-5);">提示词管家</h2>
+        <div class="card-glass">
+          <div class="timeline" style="padding-top: var(--space-2);">
+
+            <div class="timeline-item">
+              <span class="date">2026-05-30</span>
+              <span class="version-tag">v2.2.0</span>
+              <div style="margin-top: var(--space-2); color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                <p>• 优化了界面交互体验<br>
+                • 修复了若干已知 Bug<br>
+                • 提升了软件启动速度</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="date">2026-05-20</span>
+              <span class="version-tag">v1.0.10</span>
+              <div style="margin-top: var(--space-2); color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                <p>• 新增：生成分享图功能<br>
+                • 优化：导入导出速度提升<br>
+                • 修复：部分图片无法正常显示的问题</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="date">2026-05-15</span>
+              <span class="version-tag">v1.0.5</span>
+              <div style="margin-top: var(--space-2); color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                <p>• 新增：本地文件管理功能<br>
+                • 新增：图片 + 提示词收藏方式<br>
+                • UI 界面重构</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="date">2026-05-10</span>
+              <span class="version-tag">v1.0.0</span>
+              <div style="margin-top: var(--space-2); color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                <p>• 🎉 提示词管家首次发布<br>
+                • 支持提示词收集和管理<br>
+                • 支持一键复制提示词<br>
+                • 支持配置导入导出</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="software.html">软件</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html">设计作品</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <p>&copy; 2026 Panda. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

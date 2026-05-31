@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="提示词管家 - 收集、管理、分享你的提示词">
+  <title>提示词管家 · 独立开发者</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Panda</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="software.html">软件</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="portfolio.html">设计作品</a></li>
+        <li><a href="changelog.html">更新日志</a></li>
+        <li><a href="contact.html">联系</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="切换主题"><span id="theme-icon">☀️</span></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <!-- 返回 + 标题 -->
+      <div class="detail-header">
+        <a href="software.html" class="back-link">← 返回软件列表</a>
+        <span class="version" style="margin-bottom: var(--space-3); display: inline-block;">v2.2.0</span>
+        <h1 style="margin-bottom: var(--space-2);">提示词管家</h1>
+        <p style="font-size: 16px; max-width: 600px;">一款帮你收集、管理和分享提示词的桌面工具。支持图片收藏、一键复制、生成分享图、本地文件管理等功能。</p>
+        <div class="tags" style="margin-top: var(--space-3);">
+          <span class="tag">Electron</span>
+          <span class="tag">AI工具</span>
+          <span class="tag">Windows</span>
+          <span class="tag">提示词管理</span>
+        </div>
+        <div style="margin-top: var(--space-5);">
+          <a href="https://github.com/Pandoudou0914-jpg/[仓库名]/releases" class="btn btn-download" target="_blank" rel="noopener">免费下载 (.exe)</a>
+        </div>
+      </div>
+
+      <!-- 截图展示 -->
+      <section class="section">
+        <p class="section-label">软件截图</p>
+        <div class="screenshot-placeholder">
+          [软件截图 - 16:9 - 请替换为实际截图]
+        </div>
+      </section>
+
+      <!-- 功能介绍 -->
+      <section class="section">
+        <p class="section-label">功能特性</p>
+        <h2 style="margin-bottom: var(--space-5);">它能做什么</h2>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <h4>📋 提示词收集</h4>
+            <p>分类整理自己的提示词，也可以从网上收集优秀的提示词到本地，建立自己的提示词库。</p>
+          </li>
+          <li class="feature-item">
+            <h4>🖼️ 图片 + 提示词</h4>
+            <p>支持以图文方式保存提示词，方便回顾和查找灵感来源。</p>
+          </li>
+          <li class="feature-item">
+            <h4>📋 一键复制</h4>
+            <p>点击即可复制提示词到剪贴板，随时粘贴使用，效率翻倍。</p>
+          </li>
+          <li class="feature-item">
+            <h4>📤 生成分享图</h4>
+            <p>将提示词生成精美的分享图片，方便在社交媒体上与他人交流。</p>
+          </li>
+          <li class="feature-item">
+            <h4>💾 导入导出</h4>
+            <p>支持配置的导入和导出，换电脑也能无缝迁移你的提示词库。</p>
+          </li>
+          <li class="feature-item">
+            <h4>📁 本地文件管理</h4>
+            <p>内置文件管理功能，提示词和图片都在本地，安全可靠。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 下载区域 -->
+      <section class="section">
+        <div class="card-glass" style="text-align: center; padding: var(--space-6);">
+          <h2 style="margin-bottom: var(--space-3);">准备好试试了吗？</h2>
+          <p style="margin-bottom: var(--space-5);">完全免费，目前支持 Windows 系统</p>
+          <a href="https://github.com/Pandoudou0914-jpg/[仓库名]/releases" class="btn btn-download" target="_blank" rel="noopener">下载提示词管家 v2.2.0</a>
+          <p style="margin-top: var(--space-3); font-size: 12px; color: var(--text-muted);">下载 .exe 文件，双击即可运行</p>
+        </div>
+      </section>
+
+      <!-- 更新日志摘要 -->
+      <section class="section">
+        <p class="section-label">最近更新</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="date">2026-05-30</span>
+            <span class="version-tag">v2.2.0</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">功能优化与 Bug 修复</span>
+          </div>
+          <div class="timeline-item">
+            <span class="date">2026-05-20</span>
+            <span class="version-tag">v1.0.10</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">新增分享图生成功能</span>
+          </div>
+          <div class="timeline-item">
+            <span class="date">2026-05-10</span>
+            <span class="version-tag">v1.0.0</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">首次发布</span>
+          </div>
+        </div>
+        <a href="changelog.html" style="display: inline-block; margin-top: var(--space-4); font-size: 14px;">查看完整更新日志 →</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="software.html">软件</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html">设计作品</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <p>&copy; 2026 Panda. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

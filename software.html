@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="我的软件产品">
+  <title>软件 · 独立开发者</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Panda</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="software.html">软件</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="portfolio.html">设计作品</a></li>
+        <li><a href="changelog.html">更新日志</a></li>
+        <li><a href="contact.html">联系</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="切换主题"><span id="theme-icon">☀️</span></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+      <p class="section-label">软件产品</p>
+      <h1 style="margin-bottom: var(--space-2);">我开发的工具</h1>
+      <p style="margin-bottom: var(--space-6);">每一个软件都源于真实的需求，用 AI 辅助完成开发。</p>
+
+      <div class="software-grid">
+
+        <!-- 提示词管家 -->
+        <article class="software-card">
+          <span class="version">v2.2.0</span>
+          <h3>提示词管家</h3>
+          <p>收集、管理、分享你的提示词。支持图片收藏、一键复制、生成分享图、导入导出配置、本地文件管理。</p>
+          <div class="tags">
+            <span class="tag">Electron</span>
+            <span class="tag">AI工具</span>
+            <span class="tag">Windows</span>
+            <span class="tag">提示词</span>
+          </div>
+          <div style="display: flex; gap: var(--space-2); margin-top: var(--space-2);">
+            <a href="software-detail.html" class="btn btn-primary">了解详情</a>
+            <a href="https://github.com/Pandoudou0914-jpg/[仓库名]/releases" class="btn btn-download" target="_blank" rel="noopener">下载 .exe</a>
+          </div>
+        </article>
+
+        <!-- 未来占位 -->
+        <article class="software-card" style="opacity: 0.5; border-style: dashed;">
+          <span class="version" style="background: var(--bg-surface-2); color: var(--text-muted);">开发中</span>
+          <h3>新项目</h3>
+          <p>新的想法正在酝酿中...</p>
+          <div class="tags">
+            <span class="tag">[待定]</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="software.html">软件</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html">设计作品</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <p>&copy; 2026 Panda. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

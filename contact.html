@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="联系我">
+  <title>联系 · 独立开发者</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Panda</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="software.html">软件</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="portfolio.html">设计作品</a></li>
+        <li><a href="changelog.html">更新日志</a></li>
+        <li><a href="contact.html">联系</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="切换主题"><span id="theme-icon">☀️</span></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <p class="section-label">联系方式</p>
+      <h1 style="margin-bottom: var(--space-2);">找到我</h1>
+      <p style="margin-bottom: var(--space-6);">有建议、反馈或合作想法？欢迎联系。</p>
+
+      <div class="contact-columns" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: start;">
+
+        <!-- 左侧：联系信息 -->
+        <div>
+          <section class="section">
+            <h2 style="margin-bottom: var(--space-4);">直接联系</h2>
+            <div class="card-glass" style="display: flex; flex-direction: column; gap: var(--space-4);">
+              <div>
+                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: var(--space-1);">邮箱</p>
+                <a href="mailto:2505373866@qq.com" style="font-family: var(--font-mono); font-size: 14px;">2505373866@qq.com</a>
+              </div>
+              <div>
+                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: var(--space-1);">GitHub</p>
+                <a href="https://github.com/Pandoudou0914-jpg" target="_blank" rel="noopener" style="font-family: var(--font-mono); font-size: 14px;">github.com/Pandoudou0914-jpg</a>
+              </div>
+              <div>
+                <p style="font-size: 12px; color: var(--text-muted); margin-bottom: var(--space-1);">其他社交</p>
+                <p style="font-size: 14px; color: var(--text-muted);">[Twitter / 微信 / B站 / 小红书...]</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- 右侧：留言表单 -->
+        <div>
+          <section class="section">
+            <h2 style="margin-bottom: var(--space-4);">给我留言</h2>
+            <div class="card-glass">
+              <form class="contact-form" action="https://formsubmit.co/2505373866@qq.com" method="POST">
+                <!-- 防垃圾邮件 -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="来自个人网站的新消息">
+
+                <div class="form-group">
+                  <label for="name">你的名字</label>
+                  <input type="text" id="name" name="name" placeholder="怎么称呼你？" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">你的邮箱</label>
+                  <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">消息内容</label>
+                  <textarea id="message" name="message" placeholder="你想说什么？" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="align-self: flex-start;">发送消息</button>
+              </form>
+              <p style="font-size: 11px; color: var(--text-muted); margin-top: var(--space-3);">
+                表单使用 <a href="https://formsubmit.co" target="_blank" rel="noopener">FormSubmit</a> 免费服务，
+                提交后消息会发送到你的邮箱。记得把 action 里的邮箱换成你自己的。
+              </p>
+            </div>
+          </section>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="software.html">软件</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html">设计作品</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <p>&copy; 2026 Panda. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="关于我 - 独立开发者">
+  <title>关于我 · 独立开发者</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Panda</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="software.html">软件</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="portfolio.html">设计作品</a></li>
+        <li><a href="changelog.html">更新日志</a></li>
+        <li><a href="contact.html">联系</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="切换主题"><span id="theme-icon">☀️</span></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <p class="section-label">关于我</p>
+
+      <!-- 个人介绍 -->
+      <section class="section">
+        <div class="card-glass card-center" style="max-width: 700px;">
+          <div style="display: flex; align-items: flex-start; gap: var(--space-5); flex-wrap: wrap;">
+            <!-- 像素熊猫头像 -->
+            <div class="avatar-placeholder" style="width:96px;height:96px;flex-shrink:0;background:#fff;">
+              <div class="pixel-panda">
+                <span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span>
+                <span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span>
+                <span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span>
+                <span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span>
+                <span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-b"></span>
+                <span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span>
+                <span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-n"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-n"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span>
+                <span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span>
+                <span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span>
+                <span class="pp-w"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-b"></span><span class="pp-w"></span>
+              </div>
+            </div>
+            <div style="flex: 1; min-width: 200px;">
+              <h1 style="font-size: 28px; margin-bottom: var(--space-2);">Panda</h1>
+              <p style="font-size: 16px; color: var(--accent); margin-bottom: var(--space-4);">室内工装设计师 · AI 探索者</p>
+              <p>
+                你好！我是一名室内工装设计师，工作两年，每天和空间、材料、施工图打交道。
+                业余时间我喜欢研究 AI，发现不会写代码的人也能用 AI 做出软件，这让我非常兴奋。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 我的故事 -->
+      <section class="section">
+        <h2 style="margin-bottom: var(--space-4);">我的故事</h2>
+        <div class="card card-center" style="max-width: 700px;">
+          <p>
+            我是 Panda，本职是室内工装设计师。入行两年，日常工作是画施工图、跑工地、
+            跟甲方沟通设计方案。这份工作让我对细节和用户体验有了本能的要求——
+            一个空间好不好用，和一款软件好不好用，道理是相通的。
+          </p>
+          <p>
+            2024 年开始接触 AI 工具，从最初的 ChatGPT 聊天，到后来发现 AI 竟然可以帮我写代码。
+            作为一个完全不会编程的人，看到 AI 把我描述的功能一行行实现出来，那种感觉就像
+            第一次在工地看到自己画的图纸变成真实空间一样震撼。
+          </p>
+          <p>
+            于是我开始利用业余时间，用 AI 辅助开发自己需要的工具。"提示词管家"就是第一个作品——
+            因为我自己每天用 AI，积累了大量提示词需要管理。做出来之后发现还挺好用，就分享了出来。
+          </p>
+          <p>
+            我相信 AI 正在改变创造的门槛。以前需要专业背景才能做的事，现在有想法就能尝试。
+            我不觉得自己是程序员，我是一个会用 AI 实现想法的设计师。这条路才刚刚开始。
+          </p>
+          </p>
+          <p>
+            我的目标是持续做出有用的工具，帮助更多人提高效率。
+            如果你用了我的软件觉得不错，那就是我最大的满足。
+          </p>
+        </div>
+      </section>
+
+      <!-- 技术栈 -->
+      <section class="section">
+        <p class="section-label">工具箱</p>
+        <h2 style="margin-bottom: var(--space-4);">设计 + AI</h2>
+        <div class="tags" style="gap: var(--space-3);">
+          <span class="tag" style="font-size: 13px; padding: 6px 14px;">AutoCAD</span>
+          <span class="tag" style="font-size: 13px; padding: 6px 14px;">SketchUp</span>
+          <span class="tag" style="font-size: 13px; padding: 6px 14px;">3ds Max</span>
+          <span class="tag" style="font-size: 13px; padding: 6px 14px;">室内工装设计</span>
+          <span class="tag" style="font-size: 13px; padding: 6px 14px;">AI 辅助编程</span>
+          <span class="tag" style="font-size: 13px; padding: 6px 14px;">HTML / CSS / JS</span>
+          <span class="tag" style="font-size: 13px; padding: 6px 14px;">Electron</span>
+        </div>
+      </section>
+
+      <!-- 时间线 -->
+      <section class="section">
+        <p class="section-label">时间线</p>
+        <h2 style="margin-bottom: var(--space-5);">一路走来</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="date">2026-05</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">提示词管家 v2.2.0 发布，搭建个人网站</span>
+          </div>
+          <div class="timeline-item">
+            <span class="date">2026-05</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">提示词管家 v1.0 首次发布，第一个 AI 辅助开发的软件</span>
+          </div>
+          <div class="timeline-item">
+            <span class="date">2025</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">开始在工作流中使用 AI 工具，提高设计效率</span>
+          </div>
+          <div class="timeline-item">
+            <span class="date">2024</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">开始接触 AI，从 ChatGPT 到 AI 辅助编程</span>
+          </div>
+          <div class="timeline-item">
+            <span class="date">2023</span>
+            <span style="color: var(--text-secondary); font-size: 14px;">入行室内工装设计，开始职业生涯</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="software.html">软件</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html">设计作品</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <p>&copy; 2026 Panda. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

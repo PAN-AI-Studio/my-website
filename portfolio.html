@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panda 的室内设计作品集">
+  <title>设计作品 · Panda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* 作品集专属样式 */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+      gap: var(--space-5);
+    }
+
+    .portfolio-card {
+      background: var(--bg-surface-1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all 0.35s var(--ease-quint);
+    }
+
+    .portfolio-card:hover {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-md), 0 0 40px rgba(56,189,248,0.06);
+    }
+
+    .portfolio-iframe-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/10;
+      background: var(--bg-surface-2);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .portfolio-iframe-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* 占位：未提供链接时显示 */
+    .portfolio-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      gap: var(--space-2);
+      font-size: 14px;
+    }
+
+    .portfolio-placeholder .ph-icon {
+      font-size: 40px;
+      opacity: 0.3;
+    }
+
+    .portfolio-info {
+      padding: var(--space-4);
+    }
+
+    .portfolio-info h3 {
+      font-size: 16px;
+      margin-bottom: var(--space-1);
+    }
+
+    .portfolio-info .meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .portfolio-info p {
+      font-size: 13px;
+      margin: var(--space-2) 0 0;
+    }
+
+    .category-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: var(--space-2);
+    }
+
+    .badge-commercial {
+      background: rgba(56,189,248,0.12);
+      color: var(--accent);
+    }
+
+    .badge-residential {
+      background: rgba(168,85,247,0.12);
+      color: #a78bfa;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Panda</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="software.html">软件</a></li>
+        <li><a href="about.html">关于我</a></li>
+        <li><a href="portfolio.html">设计作品</a></li>
+        <li><a href="changelog.html">更新日志</a></li>
+        <li><a href="contact.html">联系</a></li>
+        <li><button class="theme-toggle" id="theme-toggle" aria-label="切换主题"><span id="theme-icon">☀️</span></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <p class="section-label">设计作品</p>
+      <h1 style="margin-bottom: var(--space-2);">室内设计案例</h1>
+      <p style="margin-bottom: var(--space-6);">两年工装设计经验，也涉及家装项目。以下是部分代表案例。</p>
+
+      <!-- ====== 工装设计 ====== -->
+      <section class="section">
+        <p class="section-label" style="text-align: left;">工装设计</p>
+        <h2 style="text-align: left; margin-bottom: var(--space-5);">商业空间</h2>
+
+        <div class="portfolio-grid">
+
+          <!-- 工装案例 1 -->
+          <div class="portfolio-card">
+            <div class="portfolio-iframe-wrap">
+              <!-- 替换 src 为你的豆会全景链接 -->
+              <iframe src="[豆会全景-工装案例1链接]" allowfullscreen loading="lazy"></iframe>
+              <div class="portfolio-placeholder">
+                <span class="ph-icon">🏢</span>
+                <span>工装案例 — 替换链接</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="category-badge badge-commercial">工装</span>
+              <h3>[项目名称]</h3>
+              <span class="meta">[项目类型] · [面积]㎡ · [地点]</span>
+              <p>[项目简介，描述设计理念和亮点]</p>
+            </div>
+          </div>
+
+          <!-- 工装案例 2 -->
+          <div class="portfolio-card">
+            <div class="portfolio-iframe-wrap">
+              <iframe src="[豆会全景-工装案例2链接]" allowfullscreen loading="lazy"></iframe>
+              <div class="portfolio-placeholder">
+                <span class="ph-icon">🏢</span>
+                <span>工装案例 — 替换链接</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="category-badge badge-commercial">工装</span>
+              <h3>[项目名称]</h3>
+              <span class="meta">[项目类型] · [面积]㎡ · [地点]</span>
+              <p>[项目简介]</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====== 家装设计 ====== -->
+      <section class="section">
+        <p class="section-label" style="text-align: left;">家装设计</p>
+        <h2 style="text-align: left; margin-bottom: var(--space-5);">住宅空间</h2>
+
+        <div class="portfolio-grid">
+
+          <!-- 家装案例 1 -->
+          <div class="portfolio-card">
+            <div class="portfolio-iframe-wrap">
+              <iframe src="[豆会全景-家装案例1链接]" allowfullscreen loading="lazy"></iframe>
+              <div class="portfolio-placeholder">
+                <span class="ph-icon">🏠</span>
+                <span>家装案例 — 替换链接</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="category-badge badge-residential">家装</span>
+              <h3>[项目名称]</h3>
+              <span class="meta">[户型] · [面积]㎡ · [地点]</span>
+              <p>[项目简介]</p>
+            </div>
+          </div>
+
+          <!-- 家装案例 2 -->
+          <div class="portfolio-card">
+            <div class="portfolio-iframe-wrap">
+              <iframe src="[豆会全景-家装案例2链接]" allowfullscreen loading="lazy"></iframe>
+              <div class="portfolio-placeholder">
+                <span class="ph-icon">🏠</span>
+                <span>家装案例 — 替换链接</span>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="category-badge badge-residential">家装</span>
+              <h3>[项目名称]</h3>
+              <span class="meta">[户型] · [面积]㎡ · [地点]</span>
+              <p>[项目简介]</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="software.html">软件</a>
+        <a href="about.html">关于我</a>
+        <a href="portfolio.html">设计作品</a>
+        <a href="changelog.html">更新日志</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <p>&copy; 2026 Panda. 保留所有权利。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
